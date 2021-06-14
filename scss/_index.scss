@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&family=Noto+Sans+TC:wght@400;700&display=swap');
+
+//圖片取代文字
+@mixin hide-text{
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+//font
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 0;
+    text-align: justify;
+}
+.balooTamma{
+    font-family: 'Baloo Tamma 2', cursive;
+    &-bold{
+        font-family: 'Baloo Tamma 2', cursive;
+        font-weight: 600;
+    };
+}
+
+.btn-warning{
+    color: #636057;
+    &:hover{
+    background-color: #FF785E;
+    border: 1px solid #ff785E;
+    color: #fff;
+    }
+}
+.btn-outline-secondary:hover{
+    background-color: #ffdf65;
+    border: 1px solid #ffdf65;
+    color: #858377;
+    span{
+        color: #FF785E;
+    };
+}
+
+.logo{
+    background-image: url("../img/logo.jpg");
+    background-size: auto 40px;
+    width: 111px;
+    @include hide-text;
+}
+.productImg{
+    border-radius: 35px;
+}
+.iconContent{
+    width: 168px;
+}
+.navContent{
+    background-color: #fff;
+    border: 1px solid #E8E8DB;
+    .active{
+        border-bottom: 3px solid #ffdf65;
+        font-weight: bold;
+    }; 
+}
+
+.topRadius{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.accordion-item button {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.border-lightGray{
+    border:1px solid #e5e5e5;
+    border-radius: 4px;
+}

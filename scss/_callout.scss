@@ -1,0 +1,12 @@
+// Base class
+.callout{
+    background-color:$white;
+    border-left: 3px solid $body-color;
+    &-warning{
+        background-color: $white;
+        border-left: 3px solid $warning;
+        padding-left: 16px;
+    };
+}
+
+// Modifier classes
