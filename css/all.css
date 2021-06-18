@@ -12567,6 +12567,10 @@ body {
   font-weight: 600;
 }
 
+.container {
+  max-width: 1200px;
+}
+
 .btn-warning {
   color: #636057;
 }

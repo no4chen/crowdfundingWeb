@@ -20,6 +20,10 @@ body{
     };
 }
 
+.container{
+    max-width: 1200px;
+}
+
 .btn-warning{
     color: #636057;
     &:hover{
