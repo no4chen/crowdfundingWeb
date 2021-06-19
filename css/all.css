@@ -12585,7 +12585,7 @@ body {
   border: 1px solid #ffdf65;
   color: #858377;
 }
-.btn-outline-secondary:hover span {
+.btn-outline-secondary:hover i {
   color: #FF785E;
 }
 
@@ -12620,6 +12620,10 @@ body {
   border-top-right-radius: 8px;
 }
 
+.accordion-item:focus {
+  -webkit-box-shadow: 0 0 8px 0 #49484626;
+          box-shadow: 0 0 8px 0 #49484626;
+}
 .accordion-item button {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -12628,6 +12632,10 @@ body {
 .border-lightGray {
   border: 1px solid #e5e5e5;
   border-radius: 4px;
+}
+
+.footer {
+  background-color: #494846;
 }
 
 .callout {
