@@ -106,7 +106,7 @@
                         <img src="img/icon_good04.svg" width="24px;" data-bs-toggle="tooltip" data-bs-placement="top" title="人氣王" alt="iconGood04">
                     </div>
                     <p class="bg-white callout-warning py-3 mb-4">專案募資中！<br>在 <span class="fw-bold">2021/06/14 23:59</span> 募資結束前，您都可以贊助我們！</p>
-                    <a href="" class="btn btn-lg btn-warning rounded-pill w-100 mb-2 hover-red">贊助專案</a>
+                    <a href="#donateForm" class="btn btn-lg btn-warning rounded-pill w-100 mb-2 hover-red">贊助專案</a>
                     <div class="d-flex">
                         <p class="me-2" style="width: 60%;">
                             <a href="#" class="btn btn-lg btn-outline-secondary rounded-pill w-100 hover-warning">
@@ -147,7 +147,7 @@
             <div class="col-md-8">
                 <div class="tab-content mb-6" id="nav-tabContent">
                     <!--introduce-->
-                    <div class="tab-pane fade  show active" id="introduce" role="tabpanel" aria-labelledby="introduce-tab">
+                    <div class="tab-pane fade  " id="introduce" role="tabpanel" aria-labelledby="introduce-tab">
                         <img class="img-fluid mb-4" src="img/p1.jpg"  alt="">
                         <h3 class="callout-warning fw-bold border-4">施了魔法的照片</h3>
                         <p class="lh-lg">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
@@ -278,61 +278,75 @@
                         </div>
                     </div>
                     <!--message-->
-                    <div class="tab-pane fade" id="message" role="tabpanel" aria-labelledby="message-tab">4444...</div>
-                </div>
-                <!--donate form-->
-                <div>
-                    <div class="text-center mb-4">
-                        <img src="img/icon_heart.svg" height="36px" alt="iconHeart">
-                    </div>
-                    <div class="text-center position-relative mb-5">
-                        <div class="progress bg-warning" style="height: 3px">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <h2 class="position-absolute top-0 start-50 translate-middle text-center bg-white px-3">贊助專案</h2>
-                    </div>
-                    <!--form-->
-                    <form class="needs-validation" novalidate>
-                        <ul class="mb-3">
-                            <li class="mb-4">
-                                <label for="Program" class="form-label">贊助方案</label>
-                                <select class="form-select" aria-label="Default select example" required>
-                                    <option selected disabled value="">請選擇一個方案</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please choose the program.
+                    <div class="tab-pane fade show active" id="message" role="tabpanel" aria-labelledby="message-tab">
+                        <p class="callout-warning py-3">只有本專案的贊助者才可以留言哦，如果有任何專案相關的問題，歡迎聯絡提案人！</p>
+                        <!--pepole01-->
+                        <div class="card mb-3 ">
+                            <div class="card-body">
+                                <div class="row g-0 mb-3">
+                              <div class="col-md-1">
+                                <img src="img/user_img01.jpg" alt="...">
+                              </div>
+                              <div class="col-md-11 ps-3">
+                                  <h5 class="card-title">廖小杰</h5>
+                                  <p class="card-text"><small class="text-secondary">2020年5月22日 11:32</small></p>
+                              </div>
+                            </div>
+                                <p class="card-text">晚上起床上廁所看到照片裡的人一直動其實有點恐怖，希望可以有暫停或是定時的功能！</p>
+                                <div class="bg-lightGray p-3 rounded-1">
+                                    <p class="text-danger">提案者回覆</p>
+                                    <p>你要嘛起床的時候開燈，要嘛給我們更多錢開發阿</p>
                                 </div>
-                            </li>
-                            <li class="mb-4">
-                                <label for="formName" class="form-label">收件人姓名</label>
-                                <input type="text" class="form-control" id="formName" aria-describedby="formName" required>
-                            </li>
-                            <li class="mb-4">
-                                <label for="formTel" class="form-label">連絡電話</label>
-                                <input type="tel" class="form-control" id="formTel" aria-describedby="formTel" required>
-                            </li>
-                            <li class="mb-4">
-                                <label for="exampleInputEmail1" class="form-label">連絡信箱</label>
-                                <input type="email" class="form-control" id="formEmail1" aria-describedby="emailHelp" required>
-                            </li>
-                            <li class="mb-4">
-                                <label for="howpay" class="form-label">付款方式</label>
-                                <select class="form-select" aria-label="Default select example" required>
-                                    <option selected value="1">信用卡付款</option>
-                                    <option value="2">One</option>
-                                    <option value="3">Two</option>
-                                    <option value="4">Three</option>
-                                </select>
-                            </li>
-                            <li class="text-center">
-                                <button type="submit" class="btn btn-lg btn-warning rounded-pill px-6">贊助專案</button>
-                            </li>
-                        </ul>
-                      </form>
+                            </div>
+                        </div>
+                        <!--pepole02-->
+                        <div class="card mb-3 ">
+                            <div class="card-body">
+                                <div class="row g-0 mb-3">
+                              <div class="col-md-1">
+                                <img src="img/user_img02.jpg" alt="...">
+                              </div>
+                              <div class="col-md-11 ps-3">
+                                  <h5 class="card-title">卡阿伯</h5>
+                                  <p class="card-text"><small class="text-secondary">2020年5月22日 11:32</small></p>
+                              </div>
+                            </div>
+                                <p class="card-text">希望有更多花色可以選擇！我女兒最近喜歡綠色</p>
+                            </div>
+                        </div>
+                        <!--pepole03-->
+                        <div class="card mb-3 ">
+                            <div class="card-body">
+                                <div class="row g-0 mb-3">
+                              <div class="col-md-1">
+                                <img src="img/user_img02.jpg" alt="...">
+                              </div>
+                              <div class="col-md-11 ps-3">
+                                  <h5 class="card-title">賈師</h5>
+                                  <p class="card-text"><small class="text-secondary">2020年5月22日 11:32</small></p>
+                              </div>
+                            </div>
+                                <p class="card-text">可以做個相簿功能嗎？拍出好看的影片再讓我們選擇要印出哪一張這樣</p>
+                            </div>
+                        </div>
+                        <!--pepole04-->
+                        <div class="card mb-3 ">
+                            <div class="card-body">
+                                <div class="row g-0 mb-3">
+                              <div class="col-md-1">
+                                <img src="img/user_img02.jpg" alt="...">
+                              </div>
+                              <div class="col-md-11 ps-3">
+                                  <h5 class="card-title">俊俊</h5>
+                                  <p class="card-text"><small class="text-secondary">2020年5月22日 11:32</small></p>
+                              </div>
+                            </div>
+                                <p class="card-text">test123 看一下我是不是真的可以留言</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
             <div class="col-md-4 ps-md-6 overflow-auto" style="height: 1400px;">
                 <div class="border rounded-3 p-3 mb-5">
@@ -408,6 +422,61 @@
                         <p class="card-text">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
                         <a href="#" class="btn btn-lg btn-warning rounded-pill w-100">贊助此專案</a>
                     </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <!--donate form-->
+                <div id="donateForm">
+                    <div class="text-center my-4">
+                        <img src="img/icon_heart.svg" height="36px" alt="iconHeart">
+                    </div>
+                    <div class="text-center position-relative mb-5">
+                        <div class="progress bg-warning" style="height: 3px">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h2 class="position-absolute top-0 start-50 translate-middle text-center bg-white px-3">贊助專案</h2>
+                    </div>
+                    <!--form-->
+                    <form class="needs-validation" novalidate>
+                        <ul class="mb-3 ps-0">
+                            <li class="mb-4">
+                                <label for="Program" class="form-label">贊助方案</label>
+                                <select class="form-select" aria-label="Default select example" required>
+                                    <option selected disabled value="">請選擇一個方案</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please choose the program.
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <label for="formName" class="form-label">收件人姓名</label>
+                                <input type="text" class="form-control" id="formName" aria-describedby="formName" required>
+                            </li>
+                            <li class="mb-4">
+                                <label for="formTel" class="form-label">連絡電話</label>
+                                <input type="tel" class="form-control" id="formTel" aria-describedby="formTel" required>
+                            </li>
+                            <li class="mb-4">
+                                <label for="exampleInputEmail1" class="form-label">連絡信箱</label>
+                                <input type="email" class="form-control" id="formEmail1" aria-describedby="emailHelp" required>
+                            </li>
+                            <li class="mb-4">
+                                <label for="howpay" class="form-label">付款方式</label>
+                                <select class="form-select" aria-label="Default select example" required>
+                                    <option selected value="1">信用卡付款</option>
+                                    <option value="2">One</option>
+                                    <option value="3">Two</option>
+                                    <option value="4">Three</option>
+                                </select>
+                            </li>
+                            <li class="text-center">
+                                <button type="submit" class="btn btn-lg btn-warning rounded-pill px-6">贊助專案</button>
+                            </li>
+                        </ul>
+                      </form>
                 </div>
             </div>
         </div>
